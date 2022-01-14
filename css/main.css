@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* ==FORM== */
+
+.form__div {
+     position: relative;
+     height: 48px;
+     margin-bottom: 20px;
+}
+
+.form__input {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 15px;
+     font-size: 18px;
+     outline: none;
+     background: none;
+     border-radius: 15px;
+     border: 1px solid rgb(199, 191, 191);
+     z-index: 1;
+}
+
+.form__label {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     padding: 0px 2px;
+     font-size: 16px;
+     color: rgb(199, 191, 191);
+     background-color: #fff;
+     transition: .3s;
+}
+
+input:focus {
+     border: 1px solid dodgerblue;
+}
+
+input:focus+.form__label {
+     top: -8px;
+     left: 15px;
+     color: dodgerblue;
+     font-size: 14px;
+     font-weight: 500;
+     z-index: 10;
+}
+
+input:focus~.fomr__label,
+input:not(:placeholder-shown)~.form__label {
+     top: -8px;
+     left: 15px;
+     font-size: 14px;
+     font-weight: 500;
+     z-index: 10;
+}
+
+.form__button {
+     display: inline-block;
+     padding: 10px 20px;
+     font-weight: 600;
+     color: #fff;
+     cursor: pointer;
+     border: none;
+     border-radius: 10px;
+     background-color: dodgerblue;
+     transition: .3s;
+}
+
+.form__button:hover {
+     opacity: 0.8;
+}
+
+.form__button:active {
+     opacity: 0.6;
+}
+
+/* ==RESULT== */
+
+.result__num {
+     height: calc(100vh - 250px);
+     overflow: auto;
+}
+
+.result__num {
+     overflow: auto;
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+.result__num::-webkit-scrollbar {
+     width: 0;
+     height: 0;
+}
+
+.result__num-header {
+     position: relative;
+     color: rgb(105, 100, 100);
+     margin: 0px 0px 15px 25px;
+}
+
+li {
+     display: flex; 
+     flex-direction: row-reverse; 
+     justify-content: start; 
+     align-items: center;
+     margin-bottom: 15px;
+     color: white;
+     font-weight: 500;
+     font-size: 18px;
+     
+} 
+
+
