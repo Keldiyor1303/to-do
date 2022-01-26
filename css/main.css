@@ -84,6 +84,27 @@ input:not(:placeholder-shown)~.form__label {
      opacity: 0.6;
 }
 
+
+.form__button2 {
+     display: inline-block;
+     padding: 10px 20px;
+     font-weight: 600;
+     color: dodgerblue;
+     cursor: pointer;
+     border: none;
+     border-radius: 10px;
+     background-color: #fff;
+     transition: .3s;
+}
+
+.form__button2:hover {
+     opacity: 0.8;
+}
+
+.form__button2:active {
+     opacity: 0.6;
+}
+
 /* ==RESULT== */
 
 .result__num {
@@ -110,7 +131,7 @@ input:not(:placeholder-shown)~.form__label {
 
 li {
      display: flex; 
-     flex-direction: row-reverse; 
+     gap: 20px;
      justify-content: start; 
      align-items: center;
      margin-bottom: 15px;
